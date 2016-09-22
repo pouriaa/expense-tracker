@@ -1,0 +1,29 @@
+<label>Search Descriptions: <input ng-model="search.description"></label>
+
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Description</th>
+      <th>Amount ($)</th>
+      <th>Date</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr ng-repeat="expense in expenses| filter:search:strict | orderBy:'date' track by $index">
+      <td class="col-xs-3">{{expense.name}}</td>
+      <td class="col-xs-3">{{expense.description}}</td>
+      <td class="col-xs-3">{{expense.amount}}</td>
+      <td class="col-xs-2">{{expense.date | date: 'shortDate'}}</td>
+      <td class="col-xs-1" ng-click="remove(expense, expense._id)">&#10005;</td>
+    </tr>
+  </tbody>
+</table>
+
+<form novalidate class="simple-form" ng-model="expense">
+  <h2>Enter a new expense</h2>
+  <input class="col-xs-4 col-sm-2 col-sm-offset-3" placeholder="name" ngRequired type="text" ng-model="expense.name" />
+  <input class="col-xs-4 col-sm-2 " placeholder="description" ngRequired type="text" ng-model="expense.description" />
+  <input class="col-xs-4 col-sm-2 " placeholder="amount" ngRequired type="number" ng-model="expense.amount" /><br/>
+  <input class="col-xs-12 col-sm-6 col-sm-offset-3" type="submit" ng-click="save(expense)" value="Save" />
+</form>
