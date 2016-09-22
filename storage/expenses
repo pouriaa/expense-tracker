@@ -1,4 +1,3 @@
-{"name":"Bread","date":{"$$date":1474506323029},"description":"Carbs are good.","amount":415,"_id":"6bEAxUdUQbGfcaLI"}
 {"name":"Butter","date":{"$$date":1474506704433},"description":"Fats are good","amount":4423,"_id":"8KhMYzBFsktZoXrq"}
 {"name":"Couch","date":{"$$date":1374503271170},"description":"Fun to sit on","amount":21,"_id":"BgGEMR6ffPkYkvJ2"}
 {"name":"Candy","date":{"$$date":1374505157564},"description":"Trick or treaters","amount":522,"_id":"Imv8F0GMa5PAfxnb"}
@@ -8,4 +7,5 @@
 {"name":"Book","date":{"$$date":1474507803044},"description":"Get educated","amount":6,"_id":"hQHPMUEKDke5JrCH"}
 {"name":"Ball pit","date":{"$$date":1474507637877},"description":"Gotta have fun","amount":1000,"_id":"qbhSOF5kBuiqluDD"}
 {"$$indexCreated":{"fieldName":"name","unique":true,"sparse":false}}
-{"$$deleted":true,"_id":"6bEAxUdUQbGfcaLI"}
+{"name":"TEST","date":{"$$date":1474524231388},"description":"testing","amount":22,"_id":"roTsXpNL1nbQXuTf"}
+{"$$deleted":true,"_id":"eFn4E3asJJ0UBx8r"}
