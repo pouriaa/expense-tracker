@@ -1,8 +1,8 @@
 angular.module('ExpenseCtrl', []).controller('ExpenseCtrl', function($scope, $http) {
 
-  $http.get('/api/expense').success(function(items) {
+  $http.get('/api/expense').then(function(items) {
     // Get initial list of expenses
-    $scope.expenses = items;
+    $scope.expenses = items.data;
   });
   
   $scope.save = function(expense) {
